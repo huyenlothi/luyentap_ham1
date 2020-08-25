@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai5</title>
+</head>
+<body>
+<script>
+    let star=["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let constellation = ["Ursa_Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa_Major","Leo"];
+
+    function getStar(a) {
+    if (star.indexOf(a)!==-1) {
+        return constellation[star.indexOf(a)];
+    } else
+        return "k tim thay ngoi sao cua ban";
+    }
+    let name = prompt("nhap vao ten ngoi sao");
+    let result= getStar(name);
+    document.write(result);
+</script>
+</body>
+</html>
